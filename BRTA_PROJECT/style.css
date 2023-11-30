@@ -1,0 +1,375 @@
+body {
+    background-color: #0e1630;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.topnav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 5px;
+    background: rgba(0,0,0,.1);
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 2px solid white;
+}
+
+
+ .logo{
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.navigation_Log{
+    text-decoration: none;
+    list-style:none;
+	position:relative;
+	margin:0;
+	padding-right: 1px;
+	display:flex;
+	float:right;
+	background-position: center;
+}
+
+
+
+.navigation_Log .LoginButton{
+	position:relative;
+	display: block;
+	background:transparent;
+	border:2px solid white;
+	outline:none;
+	padding: 8px 30px;
+	margin: 10px 0;
+	text-transform: uppercase;
+	text-decoration:none;
+	color: White;
+	border-radius:10px;
+	font-weight: bold;
+	margin-top:12px;
+	margin-left:20px;
+	margin-right:5px;
+	
+}
+
+.navigation_Log .LoginButton:hover{
+	background:White;
+	color:black;
+}
+ 
+
+.navbar a {
+    font: 1rem sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 10px;
+	margin: 100px 0;
+    justify-content: center;
+}
+
+.navbar a:hover{
+    background: white;
+	color:black;
+	border-radius:5px;
+}
+
+#menu-icon{
+    font-size: 30px;
+    padding-top: 15px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/*BREAKPOINTS*/
+
+@media (max-width:1000px) {
+    .topnav{
+        padding: 10px;
+    }
+}
+
+@media (max-width:1050px) {
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: .5rem 4%;
+        background: rgba(0,0,0,.5);
+        backdrop-filter: blur(50px);
+        border-top: 2px solid white;
+        display: none;
+    }
+
+   
+
+    .navbar a {
+        display: none;
+        display: flex;
+        padding: 10px 20px;
+	    margin: 5px 0;
+    }
+}
+
+
+
+
+#validation {
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#validation h1 {
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+
+#validation button{
+    width:100%;
+	height:45px;
+	background: none;
+	border-color: black;
+	border-radius:10px;
+	cursor:pointer;
+	font-size:1em;
+	color: black;
+	font-weight:500;
+}
+
+#validation button:hover{
+    background: #0e1630;
+	color: white;
+	border:none;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+.input-control label{
+    color: black;
+}
+.input-control input {
+    border: 2px solid black;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+
+
+
+/*Footer*/
+
+.Footer{
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+ }
+
+.row{
+	width: 85%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	background: transparent;
+}
+
+.col{
+	flex-basis: 25px;
+	padding: 10px;
+	background: transparent;
+}
+
+.col h3{
+	width: 100px;
+	margin-bottom: 20px;
+	position: relative;
+	background: transparent;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+
+.link{
+	background: transparent;
+}
+
+ol li{
+	margin-bottom: 12px;
+	background: transparent;
+}
+
+ .link li a{
+	text-decoration: none;
+	color: white;
+	background: transparent;
+}
+ul li{
+    list-style: none;
+}
+
+ .footer_form{
+	padding-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid white;
+	margin-bottom: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	background: transparent;
+}
+
+ .footer_form .fa-regular{
+	font-size: 18px;
+	margin-right: 10px;
+	background: transparent;
+}
+
+ .footer_form input{
+	outline: none;
+	background: transparent;
+	color: white;
+	border: 0;
+}
+
+.btn{
+	width:100%;
+	height:45px;
+	background:none;
+	border-color: white;
+	border-radius:10px;
+	cursor:pointer;
+	font-size:1em;
+	color:White;
+	font-weight:500;
+}
+
+.btn:hover{
+	background:White;
+	color:black;
+	border:none;
+}
+
+
+.fa-brands{
+	background: transparent;
+	cursor: pointer;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding-left: 1px;
+	font-size: 40px;
+}
+
+.fa-brands:hover{
+	background: crimson;
+	border-radius:5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*underline*/
+.underline{
+width: 100%;
+height: 5px;
+background-color: #767676;
+border-radius: 3px;
+position: absolute;
+top: 25px;
+left: 0;
+overflow: hidden;
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+
+@media (max-width:700px) {
+    .Footer{
+        bottom: unset;
+    }
+
+    .col{
+        flex-basis: 100%;
+    }
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 3px solid white;
+    margin: 20px auto;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+}
+
